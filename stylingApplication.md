@@ -52,8 +52,8 @@ The BEM (Block Element Modifier) methodology is a very simple approach to creati
 ### Naming convention:
 
 - ```.block``` - the first word in the name means that the class applies to the block.
-- ```__element``` - a word preceded by two "underscores" means that the class applies to the element.
-- ```--modifier``` - a word preceded by two hyphens identifies the modifier class.
+- ```_element``` - a word preceded by two "underscores" means that the class applies to the element.
+- ```__modifier``` - a word preceded by two hyphens identifies the modifier class.
 
 Some examples:
 
@@ -66,7 +66,7 @@ Some examples:
 Each block can have different elements inside.
 
 ```css
-.block__element {
+.block_element {
   /* code for element of the block */
 }
 ```
@@ -74,18 +74,38 @@ Each block can have different elements inside.
 If a block or element has a specific variant, we use a modifier for that.
 
 ```css
-.block__element--modifier {
+.block_element__modifier {
   /* code for specific variant of the element */
 }
 
-.block--modifier {
+.block__modifier {
+  /* code for specific variant of the block */
+}
+```
+
+If the name has several words then we use comerCase.
+
+```css
+.menuBlock {
+  /* code for the whole block */
+}
+
+.menuBlock_bigElement {
+  /* code for specific variant of the element */
+}
+
+.menuBlock_bigElement__cancelModifier {
+  /* code for specific variant of the element */
+}
+
+.menuBlock__acceptModifier {
   /* code for specific variant of the block */
 }
 ```
 
 ### Name components
 
-We use unique names when naming components. This is the most natural way. It consists in assigning a unique name to each styled component.
+We use unique names when naming components. This is the most natural way. It consists in assigning a unique name to each linaria.
 
 ```javascript
 // ./menu/Menu.styled.tsx
