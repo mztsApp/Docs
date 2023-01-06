@@ -109,7 +109,7 @@ We use unique names when naming components. This is the most natural way. It con
 
 ```javascript
 // ./menu/Menu.styled.tsx
-import styled from 'styled-components';
+import { styled } from '@linaria/react';
 
 export const MenuContainer = styled.nav`
   // code for menu
