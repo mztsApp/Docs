@@ -2,7 +2,7 @@
 
 In this files are naming rules and structure rules. 
 
-***use only name in english language !**
+***use only names in english language !**
 
 ## Naming branches and commits
 
