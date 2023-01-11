@@ -1,6 +1,8 @@
 # Naming convention and code architecture
 
-In this files are naming rules and structure rules.
+In this files are naming rules and structure rules. 
+
+***use only name in english language !**
 
 ## Naming branches and commits
 
@@ -26,6 +28,38 @@ git branch fix(switch)/improving-switch-component-displaying
 ```git
 git commit -m 'fix(switch): improving switch component displaying'
 ```
+## Structure 
+
+**Convention:**
+- PascalCase exemple: ```TypeOfButtonProps.tsx```,
+- CamelCase exemple: ```getBigestValue.tsx```
+
+1. components - use PacalCase, exemples:
+  - components
+    - ComponentName
+      - ComponentName.tsx
+      - ComponentName.styled.ts
+      - ComponentName.types.ts
+      - ComponentName.consts.ts
+      - ComponentName.pages.ts
+      - ComponentName.utils.ts
+2. consts - use CamelCase, exemples: 
+   - consts
+     - getFirstColorOfArray.ts
+     - getAddedNumbers.ts
+
+## Function naming
+
+It is very important to create properly name of functions to make other developer's works easier. Reading code should be like readig books, function name should describe, what function do.
+
+Therefore folow this rules:
+ - function always should began from verbs; exemples: ```get```SomeValue, ```set```SomeValues, ```handle```SomeEvent
+ - use normaly used verbs by developers: 
+   - if function return value should began from ```get```; exemple: ```getFirstElementOfArray = (array) => array(0)```
+   - if function handle evet should began from ```handle```
+   - if function return void and set value should began from ```set```
+ - use CamelCase; exempes: ```getBigestValueOfArray```, ```getObjectFromArray```
+ - never use shortened name; exemple: ```(e) => return e.type``` or ``` array.map((c, i, a) => ... )```instead use this ```(event) => event.type``` or ```array.map((current, index, array) => ... )```
 
 
 
