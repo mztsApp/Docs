@@ -32,7 +32,7 @@ git commit -m 'fix(switch): improving switch component displaying'
 
 **Convention:**
 - PascalCase exemple: ```TypeOfButtonProps.tsx```,
-- CamelCase exemple: ```getBigestValue.tsx```
+- camelCase exemple: ```getBigestValue.tsx```
 
 1. components - use PacalCase, exemples:
   - components
@@ -43,7 +43,7 @@ git commit -m 'fix(switch): improving switch component displaying'
       - ComponentName.consts.ts
       - ComponentName.pages.ts
       - ComponentName.utils.ts
-2. consts - use CamelCase, exemples: 
+2. consts - use camelCase, exemples: 
    - consts
      - getFirstColorOfArray.ts
      - getAddedNumbers.ts
@@ -60,7 +60,3 @@ Therefore folow this rules:
    - if function return void and set value should began from ```set```
  - use CamelCase; exempes: ```getBigestValueOfArray```, ```getObjectFromArray```
  - never use shortened name; exemple: ```(e) => return e.type``` or ``` array.map((c, i, a) => ... )```instead use this ```(event) => event.type``` or ```array.map((current, index, array) => ... )```
-
-
-
-
