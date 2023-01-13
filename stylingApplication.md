@@ -13,6 +13,8 @@ Thanks to the order of setting properties in css, the code in css will be cleare
 - flex-direction
 - flex-wrap
 - align-items
+- align-content
+- justfy-items
 - justify-content
 - z-index
 - margin
@@ -37,6 +39,7 @@ Thanks to the order of setting properties in css, the code in css will be cleare
 - background-color
 - object-fit
 - transform
+- transform-origin
 - transition
 
 ## Name styles
