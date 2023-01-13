@@ -22,11 +22,11 @@ Naming commits is very important, becouse on this basis package version will be 
  ### exemples:
  - branches
 ```git
-git branch fix(switch)/improving-switch-component-displaying
+git branch fix(Switch)/improving-switch-component-displaying
 ```
  - commits
 ```git
-git commit -m 'fix(switch): improving switch component displaying'
+git commit -m 'fix(Switch): improving switch component displaying'
 ```
 ## Structure 
 
